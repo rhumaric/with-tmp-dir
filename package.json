@@ -1,0 +1,25 @@
+{
+  "name": "with-tmp-dir",
+  "version": "1.0.0",
+  "description": "Little test helper that wraps test and provide them a temporary directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhumaric/with-tmp-dir.git"
+  },
+  "keywords": [
+    "test",
+    "helper",
+    "tmp",
+    "directory"
+  ],
+  "author": "Romaric Pascal <hello@romaricpascal.is>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhumaric/with-tmp-dir/issues"
+  },
+  "homepage": "https://github.com/rhumaric/with-tmp-dir#readme"
+}
