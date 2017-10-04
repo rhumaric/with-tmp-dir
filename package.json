@@ -4,7 +4,8 @@
   "description": "Little test helper that wraps test and provide them a temporary directory",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest && eslint *.js lib/**/*.js tests/**/*.js",
+    "clean": "del tmp-*"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,17 @@
   "bugs": {
     "url": "https://github.com/rhumaric/with-tmp-dir/issues"
   },
-  "homepage": "https://github.com/rhumaric/with-tmp-dir#readme"
+  "homepage": "https://github.com/rhumaric/with-tmp-dir#readme",
+  "dependencies": {
+    "del": "^3.0.0",
+    "p-tap": "^1.0.0",
+    "tmp-promise": "^1.0.3"
+  },
+  "devDependencies": {
+    "del-cli": "^1.1.0",
+    "eslint": "^4.8.0",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^21.2.1",
+    "pify": "^3.0.0"
+  }
 }

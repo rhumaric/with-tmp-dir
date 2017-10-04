@@ -1,0 +1,10 @@
+{
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+        "jest": true
+    },
+    "rules": {
+        "max-len": 0,
+        "no-warning-comments": 1
+    }
+}
