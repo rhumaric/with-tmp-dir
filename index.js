@@ -1,5 +1,4 @@
 var tmp = require('tmp-promise');
-var del = require('del');
 
 module.exports = function withTmpDir(fn, opts) {
 
@@ -10,12 +9,11 @@ module.exports = function withTmpDir(fn, opts) {
             .tap(d => {
                 dir = d;
             })
-            .tap(fn)
-            .tap(d => del(d.path))
+            .tap(d => fn(d.path))
+            .tap(d => d.cleanup())
             .tapCatch(() => {
                 console.log('Directory for failing test: ', dir.path);
             });
     };
 };
-
-module.exports.template = 'tmp-XXXXXX';
+module.exports.unsafeCleanup = true;

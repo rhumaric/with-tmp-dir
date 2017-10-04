@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/rhumaric/with-tmp-dir#readme",
   "dependencies": {
-    "del": "^3.0.0",
     "p-tap": "^1.0.0",
     "tmp-promise": "^1.0.3"
   },
