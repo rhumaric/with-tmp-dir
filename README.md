@@ -1,3 +1,5 @@
+> This repository is now [hosted on Gitlab](https://gitlab.com/romaricpascal/with-tmp-dir). Please head there if you wish to contribute. Thanks 🙂
+
 # with-tmp-dir
 
 Little test helper that wraps a test function and provides it a temporary directory.
